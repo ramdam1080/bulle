@@ -1,0 +1,42 @@
+h1 {
+  font-size: 80px;
+  text-align: center;
+  color: gray;
+  margin-top: 20px;
+}
+
+button {
+  padding: 20px;
+  border-radius: 50%;
+  border: none;
+  background-color: red;
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+}
+
+body {
+  overflow: hidden;
+  min-height: 100vh;
+  cursor: crosshair;
+}
+
+.bubble {
+  border-radius: 300px;
+  position: absolute;
+  background-color: red;
+  animation: bulle 8s forwards;
+  opacity: -1;
+}
+
+@keyframes bulle {
+  to {
+    top: -25%;
+    left: var(--left);
+    filter: hue-rotate(720deg);
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
