@@ -1,47 +1,47 @@
-h1 {
-  font-size: 80px;
-  text-align: center;
-  color: gray;
-  margin-top: 20px;
-  z-index: 1;
-}
-
-button {
-  padding: 20px;
-  border-radius: 50%;
-  border: none;
-  background-color: red;
-  color: white;
-  position: absolute;
-  bottom: 8px;
-  right: 8px;
-}
-
 body {
-  overflow: hidden;
   min-height: 100vh;
+  overflow: hidden;
   cursor: crosshair;
   background: url("../../public/img/fond.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .bubble {
-  z-index: 0;
-  border-radius: 300px;
-  position: absolute;
   background-color: red;
-  animation: bulle 8s forwards;
+  position: absolute;
+  border-radius: 50%;
+  animation: b 8s forwards;
   opacity: -1;
+  z-index: 0;
 }
 
-@keyframes bulle {
+@keyframes b {
   to {
-    top: -25%;
+    top: -15%;
     left: var(--left);
     filter: hue-rotate(720deg);
     opacity: 1;
   }
+}
+h1 {
+  text-align: center;
+  color: gray;
+  font-size: 200px;
+  margin-top: 80% 0;
+  z-index: 1;
+}
+
+button {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: none;
+  background-color: lightblue;
+  color: white;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
