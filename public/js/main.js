@@ -17,7 +17,7 @@ const bullle = () => {
 
 
     const plusminus = Math.random() > 0.5 ? 1 : -1
-    bubble.style.setProperty('--left', Math.random() * 80 * plusminus + '%')
+    bubble.style.setProperty('--left', Math.random() * 200 * plusminus + '%')
 
     setTimeout(() => {
         bubble.remove()
